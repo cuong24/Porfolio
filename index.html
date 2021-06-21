@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script defer src="theme.js"></script>
+    <script defer src="expertise.js"></script>
+    <title>Cuong Nguyen | Software Engineering</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    />
+  </head>
+  <body id="body">
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="logo navbar-item">
+            <a href="#name-div" class="navbar-link">
+              <span class="link-text logo-text">Cuong Ng</span>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="atom"
+                class="svg-inline--fa fa-atom fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#about">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="briefcase"
+                class="svg-inline--fa fa-briefcase fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"
+                ></path>
+              </svg>
+              <span class="link-text"> About </span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#projects">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="paw"
+                class="svg-inline--fa fa-paw fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                ></path>
+              </svg>
+              <span class="link-text">Projects</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#contact">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="info-circle"
+                class="svg-inline--fa fa-info-circle fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                ></path>
+              </svg>
+              <span class="link-text"> Contact </span>
+            </a>
+          </li>
+          <li class="navbar-item" id="themeButton">
+            <a class="navbar-link">
+              <svg
+                class="theme-icon"
+                id="darkIcon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="moon"
+                class="svg-inline--fa fa-moon fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"
+                ></path>
+              </svg>
+              <svg
+                class="theme-icon"
+                id="solarIcon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="sun"
+                class="svg-inline--fa fa-sun fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
+                ></path>
+              </svg>
+              <svg
+                class="theme-icon"
+                id="lightIcon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="adjust"
+                class="svg-inline--fa fa-adjust fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"
+                ></path>
+              </svg>
+              <span class="link-text">Themify</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div id="name-div">
+          <svg
+            id="animation-name"
+            width="833"
+            height="59"
+            viewBox="0 0 833 59"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16.0994 52.192C12.3074 49.984 9.30742 46.936 7.09941 43.048C4.89141 39.16 3.78741 34.768 3.78741 29.872C3.78741 24.976 4.89141 20.584 7.09941 16.696C9.30742 12.76 12.3074 9.688 16.0994 7.48C19.9394 5.272 24.1874 4.168 28.8434 4.168C34.3154 4.168 39.0914 5.488 43.1714 8.128C46.3661 10.1951 48.8839 12.9391 50.7248 16.36C51.235 17.308 51.6932 18.308 52.0994 19.36H44.2514C42.8594 16.336 40.8434 14.008 38.2034 12.376C35.6114 10.744 32.4914 9.928 28.8434 9.928C25.3394 9.928 22.1954 10.744 19.4114 12.376C16.6274 14.008 14.4434 16.336 12.8594 19.36C11.2754 22.336 10.4834 25.84 10.4834 29.872C10.4834 33.856 11.2754 37.36 12.8594 40.384C14.4434 43.36 16.6274 45.664 19.4114 47.296C22.1954 48.928 25.3394 49.744 28.8434 49.744C32.4914 49.744 35.6114 48.952 38.2034 47.368C40.8434 45.736 42.8594 43.408 44.2514 40.384H52.0994C51.6892 41.4359 51.2259 42.4359 50.7097 43.384C48.8701 46.7625 46.3573 49.4825 43.1714 51.544C39.0914 54.136 34.3154 55.432 28.8434 55.432C24.1874 55.432 19.9394 54.352 16.0994 52.192ZM15.5123 38.9831C16.8473 41.4878 18.6479 43.371 20.9286 44.7079C23.2133 46.0473 25.8255 46.744 28.8434 46.744C32.0475 46.744 34.5995 46.0527 36.6325 44.8122C38.7307 43.5134 40.3634 41.6558 41.5263 39.1296L42.3298 37.384H56.4895L54.8944 41.474C52.8082 46.8233 49.4427 51.0594 44.8012 54.0627L44.7907 54.0695L44.7801 54.0762C40.1578 57.0127 34.8079 58.432 28.8434 58.432C23.7025 58.432 18.9434 57.2338 14.6286 54.8067L14.6092 54.7958L14.5898 54.7845C10.3307 52.3045 6.9553 48.8693 4.49073 44.5295C2.00234 40.1477 0.787415 35.2367 0.787415 29.872C0.787415 24.5102 2.00104 19.6015 4.48675 15.2215C6.94857 10.8357 10.3237 7.37157 14.5898 4.88747L14.5969 4.88336L14.604 4.87928C18.9226 2.39611 23.6905 1.168 28.8434 1.168C34.8185 1.168 40.1762 2.61666 44.8012 5.60929C49.4506 8.61774 52.8147 12.8841 54.898 18.2793L56.4737 22.36H42.3298L41.5263 20.6144C40.3622 18.0855 38.7273 16.2268 36.6259 14.9278L36.6154 14.9213L36.605 14.9147C34.5764 13.6374 32.035 12.928 28.8434 12.928C25.8255 12.928 23.2133 13.6247 20.9286 14.9641C18.6577 16.2953 16.856 18.1955 15.5169 20.752L15.5123 20.7608L15.5077 20.7695C14.1958 23.2342 13.4834 26.2357 13.4834 29.872C13.4834 33.4481 14.1911 36.457 15.5123 38.9831Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M90.159 0.815994V35.568C90.159 39.5917 91.1324 41.9869 92.5089 43.3712C94.0202 44.843 96.2349 45.744 99.543 45.744C102.803 45.744 104.96 44.844 106.422 43.3827L106.433 43.371L106.445 43.3595C107.861 41.9746 108.855 39.5864 108.855 35.568V0.815994H121.407V35.496C121.407 40.0706 120.486 44.1505 118.478 47.5916L118.473 47.6011L118.467 47.6106C116.497 50.931 113.784 53.4566 110.361 55.1131C107.07 56.7284 103.42 57.504 99.471 57.504C95.5173 57.504 91.8477 56.7266 88.5175 55.117L88.5086 55.1127L88.4997 55.1083C85.1214 53.4478 82.4385 50.9207 80.4749 47.6106L80.4597 47.585L80.445 47.559C78.4988 44.1247 77.607 40.0571 77.607 35.496V0.815994H90.159ZM109.047 52.416C111.927 51.024 114.207 48.912 115.887 46.08C117.567 43.2 118.407 39.672 118.407 35.496V3.81599H111.855V35.568C111.855 40.032 110.751 43.344 108.543 45.504C106.383 47.664 103.383 48.744 99.543 48.744C95.655 48.744 92.607 47.664 90.399 45.504C88.239 43.344 87.159 40.032 87.159 35.568V3.81599H80.607V35.496C80.607 39.672 81.423 43.2 83.055 46.08C84.735 48.912 86.991 51.024 89.823 52.416C92.703 53.808 95.919 54.504 99.471 54.504C103.023 54.504 106.215 53.808 109.047 52.416Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M156.268 53.8718L156.256 53.8647C151.953 51.3904 148.528 47.9617 146.012 43.6256L146.001 43.6068L145.991 43.5877C143.51 39.1659 142.295 34.2372 142.295 28.872C142.295 23.5073 143.51 18.5963 145.999 14.2145L146.004 14.2041L146.004 14.2042C148.519 9.81742 151.948 6.37731 156.268 3.94422C160.583 1.46578 165.347 0.23999 170.495 0.23999C175.685 0.23999 180.474 1.46302 184.794 3.94417C189.111 6.37521 192.521 9.7919 194.992 14.1425C197.483 18.5287 198.695 23.4649 198.695 28.872C198.695 34.2791 197.483 39.2153 194.992 43.6015C192.522 47.9506 189.116 51.3871 184.807 53.8647L184.794 53.8718L184.782 53.8787C180.463 56.3084 175.678 57.504 170.495 57.504C165.354 57.504 160.595 56.3058 156.28 53.8787L156.268 53.8718ZM157.751 6.55199C153.911 8.71199 150.863 11.76 148.607 15.696C146.399 19.584 145.295 23.976 145.295 28.872C145.295 33.768 146.399 38.184 148.607 42.12C150.863 46.008 153.911 49.056 157.751 51.264C161.591 53.424 165.839 54.504 170.495 54.504C175.199 54.504 179.471 53.424 183.311 51.264C187.151 49.056 190.175 46.008 192.383 42.12C194.591 38.232 195.695 33.816 195.695 28.872C195.695 23.928 194.591 19.512 192.383 15.624C190.175 11.736 187.151 8.71199 183.311 6.55199C179.471 4.34399 175.199 3.23999 170.495 3.23999C165.839 3.23999 161.591 4.34399 157.751 6.55199ZM186.551 39.384C184.967 42.408 182.759 44.736 179.927 46.368C177.143 48 173.999 48.816 170.495 48.816C166.991 48.816 163.823 48 160.991 46.368C158.207 44.736 155.999 42.408 154.367 39.384C152.783 36.36 151.991 32.856 151.991 28.872C151.991 24.84 152.783 21.336 154.367 18.36C155.999 15.336 158.207 13.008 160.991 11.376C163.775 9.74399 166.943 8.92799 170.495 8.92799C174.047 8.92799 177.215 9.74399 179.999 11.376C182.783 13.008 184.967 15.336 186.551 18.36C188.183 21.336 188.999 24.84 188.999 28.872C188.999 32.856 188.183 36.36 186.551 39.384ZM157.016 37.9756C158.402 40.5371 160.229 42.4412 162.499 43.7743C164.84 45.1212 167.482 45.816 170.495 45.816C173.513 45.816 176.125 45.1192 178.41 43.7799L178.42 43.7743L178.429 43.7687C180.746 42.4339 182.562 40.5352 183.894 37.992L183.902 37.9755L183.911 37.9592C185.272 35.4381 185.999 32.4383 185.999 28.872C185.999 25.2495 185.269 22.2601 183.921 19.8025L183.907 19.7774L183.894 19.752C182.555 17.1955 180.753 15.2953 178.482 13.9641C176.204 12.6284 173.569 11.928 170.495 11.928C167.421 11.928 164.787 12.6284 162.508 13.9641C160.231 15.2988 158.4 17.2074 157.012 19.7768C155.702 22.2401 154.991 25.2392 154.991 28.872C154.991 32.4445 155.697 35.451 157.016 37.9756Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M264.188 57H253.02L231.284 24.0385V57H218.732V0.744003H229.897L251.636 33.6485V0.744003H264.188V57ZM254.636 43.632L228.284 3.744H221.732V54H228.284V14.04L254.636 54H261.188V3.744H254.636V43.632Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M326.145 21.36L325.331 19.6481C324.179 17.2238 322.555 15.4279 320.449 14.1645L320.432 14.1542L320.415 14.1438C318.308 12.8413 315.797 12.144 312.776 12.144C309.759 12.144 307.114 12.8407 304.77 14.1913L304.763 14.1954L304.756 14.1995C302.499 15.4838 300.677 17.3583 299.293 19.921C297.978 22.3941 297.272 25.3486 297.272 28.872C297.272 32.3912 297.976 35.3427 299.288 37.814C300.667 40.3223 302.489 42.209 304.763 43.5485C307.106 44.8527 309.754 45.528 312.776 45.528C317.027 45.528 320.298 44.2787 322.836 41.9329C324.696 40.2143 326.042 38.0227 326.814 35.256H307.4V23.928H340.4V32.1072L340.388 32.2459C339.96 36.8444 338.509 41.0958 336.041 44.9592L336.035 44.9672L336.03 44.9752C333.553 48.7994 330.285 51.8472 326.266 54.0975L326.253 54.105L326.239 54.1123C322.165 56.3398 317.656 57.432 312.776 57.432C307.636 57.432 302.876 56.2338 298.562 53.8067L298.549 53.7998L298.537 53.7927C294.234 51.3184 290.81 47.8897 288.294 43.5536L288.287 43.5416L288.28 43.5295C285.791 39.1477 284.576 34.2367 284.576 28.872C284.576 23.5073 285.791 18.5963 288.28 14.2145L288.286 14.2041C290.8 9.81741 294.229 6.37731 298.549 3.94422C302.865 1.46578 307.628 0.23999 312.776 0.23999C318.622 0.23999 323.901 1.69571 328.512 4.67709C333.2 7.67736 336.594 11.9132 338.683 17.27L340.279 21.36H326.145ZM326.888 7.19999C322.808 4.55999 318.104 3.23999 312.776 3.23999C308.12 3.23999 303.872 4.34399 300.032 6.55199C296.192 8.71199 293.144 11.76 290.888 15.696C288.68 19.584 287.576 23.976 287.576 28.872C287.576 33.768 288.68 38.16 290.888 42.048C293.144 45.936 296.192 48.984 300.032 51.192C303.872 53.352 308.12 54.432 312.776 54.432C317.192 54.432 321.2 53.448 324.8 51.48C328.4 49.464 331.304 46.752 333.512 43.344C335.72 39.888 337.016 36.096 337.4 31.968V26.928H310.4V32.256H330.416C330.306 33.3012 330.137 34.3012 329.911 35.256C329.057 38.8611 327.377 41.8211 324.872 44.136C321.704 47.064 317.672 48.528 312.776 48.528C309.272 48.528 306.104 47.736 303.272 46.152C300.488 44.52 298.28 42.216 296.648 39.24C295.064 36.264 294.272 32.808 294.272 28.872C294.272 24.936 295.064 21.48 296.648 18.504C298.28 15.48 300.488 13.176 303.272 11.592C306.104 9.95999 309.272 9.14399 312.776 9.14399C316.28 9.14399 319.352 9.95999 321.992 11.592C324.632 13.176 326.648 15.432 328.04 18.36H335.888C335.478 17.3081 335.014 16.3081 334.495 15.36C332.647 11.9815 330.112 9.26147 326.888 7.19999Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M477.188 57H466.02L444.284 24.0385V57H431.732V0.744003H442.897L464.636 33.6485V0.744003H477.188V57ZM467.636 43.632L441.284 3.744H434.732V54H441.284V14.04L467.636 54H474.188V3.744H467.636V43.632Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M539.145 21.36L538.331 19.6481C537.179 17.2238 535.555 15.4279 533.449 14.1645L533.432 14.1542L533.415 14.1438C531.308 12.8413 528.797 12.144 525.776 12.144C522.759 12.144 520.114 12.8407 517.77 14.1913L517.763 14.1954L517.756 14.1995C515.499 15.4838 513.677 17.3583 512.293 19.921C510.978 22.3941 510.272 25.3486 510.272 28.872C510.272 32.3912 510.976 35.3427 512.288 37.814C513.667 40.3223 515.489 42.209 517.763 43.5485C520.106 44.8527 522.754 45.528 525.776 45.528C530.027 45.528 533.298 44.2787 535.836 41.9329C537.696 40.2143 539.042 38.0227 539.814 35.256H520.4V23.928H553.4V32.1072L553.388 32.2459C552.96 36.8444 551.509 41.0958 549.041 44.9592L549.035 44.9672L549.03 44.9752C546.553 48.7994 543.285 51.8472 539.266 54.0975L539.253 54.105L539.239 54.1123C535.165 56.3398 530.656 57.432 525.776 57.432C520.636 57.432 515.876 56.2338 511.562 53.8067L511.549 53.7998L511.537 53.7927C507.234 51.3184 503.81 47.8897 501.294 43.5536L501.287 43.5416L501.28 43.5295C498.791 39.1477 497.576 34.2367 497.576 28.872C497.576 23.5073 498.791 18.5963 501.28 14.2145L501.286 14.2041C503.8 9.81741 507.229 6.37731 511.549 3.94422C515.865 1.46578 520.628 0.23999 525.776 0.23999C531.622 0.23999 536.901 1.69571 541.512 4.67709C546.2 7.67736 549.594 11.9132 551.683 17.27L553.279 21.36H539.145ZM539.888 7.19999C535.808 4.55999 531.104 3.23999 525.776 3.23999C521.12 3.23999 516.872 4.34399 513.032 6.55199C509.192 8.71199 506.144 11.76 503.888 15.696C501.68 19.584 500.576 23.976 500.576 28.872C500.576 33.768 501.68 38.16 503.888 42.048C506.144 45.936 509.192 48.984 513.032 51.192C516.872 53.352 521.12 54.432 525.776 54.432C530.192 54.432 534.2 53.448 537.8 51.48C541.4 49.464 544.304 46.752 546.512 43.344C548.72 39.888 550.016 36.096 550.4 31.968V26.928H523.4V32.256H543.416C543.306 33.3012 543.137 34.3012 542.911 35.256C542.057 38.8611 540.377 41.8211 537.872 44.136C534.704 47.064 530.672 48.528 525.776 48.528C522.272 48.528 519.104 47.736 516.272 46.152C513.488 44.52 511.28 42.216 509.648 39.24C508.064 36.264 507.272 32.808 507.272 28.872C507.272 24.936 508.064 21.48 509.648 18.504C511.28 15.48 513.488 13.176 516.272 11.592C519.104 9.95999 522.272 9.14399 525.776 9.14399C529.28 9.14399 532.352 9.95999 534.992 11.592C537.632 13.176 539.648 15.432 541.04 18.36H548.888C548.478 17.3081 548.014 16.3081 547.495 15.36C545.647 11.9815 543.112 9.26147 539.888 7.19999Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M587.159 0.815994V35.568C587.159 39.5917 588.132 41.9869 589.509 43.3712C591.02 44.843 593.235 45.744 596.543 45.744C599.803 45.744 601.96 44.844 603.422 43.3827L603.433 43.371L603.445 43.3595C604.861 41.9746 605.855 39.5864 605.855 35.568V0.815994H618.407V35.496C618.407 40.0706 617.486 44.1505 615.478 47.5916L615.473 47.6011L615.467 47.6106C613.497 50.931 610.784 53.4566 607.361 55.1131C604.07 56.7284 600.42 57.504 596.471 57.504C592.517 57.504 588.848 56.7266 585.518 55.117L585.509 55.1127L585.5 55.1083C582.121 53.4478 579.439 50.9207 577.475 47.6106L577.46 47.585L577.445 47.559C575.499 44.1247 574.607 40.0571 574.607 35.496V0.815994H587.159ZM606.047 52.416C608.927 51.024 611.207 48.912 612.887 46.08C614.567 43.2 615.407 39.672 615.407 35.496V3.81599H608.855V35.568C608.855 40.032 607.751 43.344 605.543 45.504C603.383 47.664 600.383 48.744 596.543 48.744C592.655 48.744 589.607 47.664 587.399 45.504C585.239 43.344 584.159 40.032 584.159 35.568V3.81599H577.607V35.496C577.607 39.672 578.423 43.2 580.055 46.08C581.735 48.912 583.991 51.024 586.823 52.416C589.703 53.808 592.919 54.504 596.471 54.504C600.023 54.504 603.215 53.808 606.047 52.416Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M692.111 0.815994L673.813 35.8012V57H661.261V35.8041L642.88 0.815994H656.992L667.501 22.383L678.009 0.815994H692.111ZM667.501 29.232L655.117 3.81599H647.845L664.261 35.064V54H670.813V35.064L687.157 3.81599H679.885L667.501 29.232Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M753.427 22.92V34.32H735.139V45.6H755.587V57H722.587V0.744003H755.587V12.144H735.139V22.92H753.427ZM732.139 9.144H752.587V3.744H725.587V54H752.587V48.6H732.139V31.32H750.427V25.92H732.139V9.144Z"
+              stroke="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M832.188 57H821.02L799.284 24.0385V57H786.732V0.744003H797.897L819.636 33.6485V0.744003H832.188V57ZM822.636 43.632L796.284 3.744H789.732V54H796.284V14.04L822.636 54H829.188V3.744H822.636V43.632Z"
+              stroke="black"
+            />
+          </svg>
+        </div>
+        <div class="home__content">
+          <div class=" text-center home__title">
+            <h1>Software Engineer</h1>
+          </div>
+          <h2 class="text-center home__body">Spring Boot . NodeJS . Docker . React</h2>
+          <div class="home__button">
+            <a href="#contact" class="neon-button">Get in touch</a>
+            <a href="#projects" class="neon-button">The project I did</a>          
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about__container split">
+          <div class="about__picture">
+            <img class="about__img" src="./images/avatar.jpg" alt="My avatar">
+          </div>
+          <div class="about__content">
+            <h1 class="about__title">Hello</h1>
+            <h2 class="about__body">
+              I'm Cuong, a cat lover, 20-something-year-old. I am a senior student at RMIT Vietnam, majoring in Software Engineering. I am excited about many aspects of software development, especially Cloud and Software Architecture. 
+            </h2>
+          </div>
+        </div>
+        <div class="expertise__containter split">
+          <div class="hexagon-wrapper">
+          	<div class="hexagon-row">
+          	  <div class="half-hexagon">
+          	  </div>
+          	  <div class="hexagon spring-boot">
+          	    <img src="./images/spring-boot.svg" alt="">
+          	  </div>
+          	  <div class="hexagon nodejs">
+          	    <img src="./images/nodejs.png" alt="">
+          	  </div>
+          	</div>
+          	<div class="hexagon-row">
+          	  <div class="hexagon css">
+          	    <img src="./images/css-3.png" alt="">
+          	  </div>
+          	  <div class="hexagon html">
+          	    <img src="./images/html-5.png" alt="">
+          	  </div>
+          	  <div class="hexagon react">
+          	    <img src="./images/react.png" alt="">
+          	  </div>
+          	</div>
+          	<div class="hexagon-row">
+          	  <div class="half-hexagon">
+          	    <img src="./images/css-3.png" alt="">
+          	  </div>
+          	  <div class="hexagon docker">
+          	    <img src="./images/docker.png" alt="">
+          	  </div>
+          	  <div class="hexagon typescript">
+          	    <img src="./images/typescript.png" alt="">
+          	  </div>
+          	</div>
+          </div>
+          <div class="experitise-wrapper">
+            <div class="experitise__discription spring-boot">
+              <div class="experitise__body">
+                <div class="experitise__title">
+                  <h1>Spring Boot</h1>
+                </div>
+                <div class="experitise__content">
+                  <h1>2 Year Experience</h1>
+                </div>
+              </div>
+            </div>
+            <div class="experitise__discription hidden nodejs">
+              <div class="experitise__body">
+                <div class="experitise__title">
+                  <h1>NodeJS</h1>
+                </div>
+                <div class="experitise__content">
+                  <h1>1 Year Experience</h1>
+                </div>
+              </div>
+            </div>
+            <div class="experitise__discription hidden css">
+              <div class="experitise__body">
+                <div class="experitise__title">
+                  <h1>CSS</h1>
+                </div>
+                <div class="experitise__content">
+                  <h1>3 Year Experience</h1>
+                </div>
+              </div>
+            </div>
+            <div class="experitise__discription hidden html">
+              <div class="experitise__body">
+                <div class="experitise__title">
+                  <h1>HTML</h1>
+                </div>
+                <div class="experitise__content">
+                  <h1>3 Year Experience</h1>
+                </div>
+              </div>
+            </div>
+            <div class="experitise__discription hidden react">
+              <div class="experitise__body">
+                <div class="experitise__title">
+                  <h1>React</h1>
+                </div>
+                <div class="experitise__content">
+                  <h1>1 Year Experience</h1>
+                </div>
+              </div>
+            </div>
+            <div class="experitise__discription hidden docker">
+              <div class="experitise__body">
+                <div class="experitise__title">
+                  <h1>Docker</h1>
+                </div>
+                <div class="experitise__content">
+                  <h1>1 Year Experience</h1>
+                </div>
+              </div>
+            </div>
+            <div class="experitise__discription hidden typescript">
+              <div class="experitise__body">
+                <div class="experitise__title">
+                  <h1>Typescript</h1>
+                </div>
+                <div class="experitise__content">
+                  <h1>1 Year Experience</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section id="projects">
+        <div class="projects-line">
+          <div class="project">
+            <div class="front">
+              <div class="rank">1</div>
+              <img class="project__picture"
+                src="https://images.unsplash.com/photo-1618480305445-55f7c4d2ebbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxOTIwNTYzOA&ixlib=rb-1.2.1&q=80&w=400"
+                alt=""
+              />
+              <h3 class="project__name">Project's Name</h3>
+              <div class="stat">
+                <p class="num-people">4 People</p>
+                <div class="tech-stacks">
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="project-info">
+                <p class="project-people">
+                  4 <br>
+                  <span>People</span>
+                </p>
+                <p class="project-time">
+                  4 <br>
+                  <span>Week(s)</span>
+                </p>
+              </div>
+              <b class="project__button"> <a class="neon-button" href="">See more</a></b>
+              <div class="tech-stacks">
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 1</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 2</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 3</h1>
+                </div>
+              </div>
+            </div>
+            <div class="background"></div>
+          </div>
+          <div class="project">
+            <div class="front">
+              <div class="rank">1</div>
+              <img class="project__picture"
+                src="https://images.unsplash.com/photo-1618480305445-55f7c4d2ebbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxOTIwNTYzOA&ixlib=rb-1.2.1&q=80&w=400"
+                alt=""
+              />
+              <h3 class="project__name">Project's Name</h3>
+              <div class="stat">
+                <p class="num-people">4 People</p>
+                <div class="tech-stacks">
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="project-info">
+                <p class="project-people">
+                  4 <br>
+                  <span>People</span>
+                </p>
+                <p class="project-time">
+                  4 <br>
+                  <span>Week(s)</span>
+                </p>
+              </div>
+              <b class="project__button"> <a class="neon-button" href="">See more</a></b>
+              <div class="tech-stacks">
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 1</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 2</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 3</h1>
+                </div>
+              </div>
+            </div>
+            <div class="background"></div>
+          </div>
+          <div class="project">
+            <div class="front">
+              <div class="rank">1</div>
+              <img class="project__picture"
+                src="https://images.unsplash.com/photo-1618480305445-55f7c4d2ebbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxOTIwNTYzOA&ixlib=rb-1.2.1&q=80&w=400"
+                alt=""
+              />
+              <h3 class="project__name">Project's Name</h3>
+              <div class="stat">
+                <p class="num-people">4 People</p>
+                <div class="tech-stacks">
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="project-info">
+                <p class="project-people">
+                  4 <br>
+                  <span>People</span>
+                </p>
+                <p class="project-time">
+                  4 <br>
+                  <span>Week(s)</span>
+                </p>
+              </div>
+              <b class="project__button"> <a class="neon-button" href="">See more</a></b>
+              <div class="tech-stacks">
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 1</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 2</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 3</h1>
+                </div>
+              </div>
+            </div>
+            <div class="background"></div>
+          </div>
+        </div>
+        <div class="projects-line">
+          <div class="project">
+            <div class="front">
+              <div class="rank">1</div>
+              <img class="project__picture"
+                src="https://images.unsplash.com/photo-1618480305445-55f7c4d2ebbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxOTIwNTYzOA&ixlib=rb-1.2.1&q=80&w=400"
+                alt=""
+              />
+              <h3 class="project__name">Project's Name</h3>
+              <div class="stat">
+                <p class="num-people">4 People</p>
+                <div class="tech-stacks">
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="project-info">
+                <p class="project-people">
+                  4 <br>
+                  <span>People</span>
+                </p>
+                <p class="project-time">
+                  4 <br>
+                  <span>Week(s)</span>
+                </p>
+              </div>
+              <b class="project__button"> <a class="neon-button" href="">See more</a></b>
+              <div class="tech-stacks">
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 1</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 2</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 3</h1>
+                </div>
+              </div>
+            </div>
+            <div class="background"></div>
+          </div>
+          <div class="project">
+            <div class="front">
+              <div class="rank">1</div>
+              <img class="project__picture"
+                src="https://images.unsplash.com/photo-1618480305445-55f7c4d2ebbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxOTIwNTYzOA&ixlib=rb-1.2.1&q=80&w=400"
+                alt=""
+              />
+              <h3 class="project__name">Project's Name</h3>
+              <div class="stat">
+                <p class="num-people">4 People</p>
+                <div class="tech-stacks">
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="project-info">
+                <p class="project-people">
+                  4 <br>
+                  <span>People</span>
+                </p>
+                <p class="project-time">
+                  4 <br>
+                  <span>Week(s)</span>
+                </p>
+              </div>
+              <b class="project__button"> <a class="neon-button" href="">See more</a></b>
+              <div class="tech-stacks">
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 1</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 2</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 3</h1>
+                </div>
+              </div>
+            </div>
+            <div class="background"></div>
+          </div>
+          <div class="project">
+            <div class="front">
+              <div class="rank">1</div>
+              <img class="project__picture"
+                src="https://images.unsplash.com/photo-1618480305445-55f7c4d2ebbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxOTIwNTYzOA&ixlib=rb-1.2.1&q=80&w=400"
+                alt=""
+              />
+              <h3 class="project__name">Project's Name</h3>
+              <div class="stat">
+                <p class="num-people">4 People</p>
+                <div class="tech-stacks">
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                  <img src="images/css-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="project-info">
+                <p class="project-people">
+                  4 <br>
+                  <span>People</span>
+                </p>
+                <p class="project-time">
+                  4 <br>
+                  <span>Week(s)</span>
+                </p>
+              </div>
+              <b class="project__button"> <a class="neon-button" href="">See more</a></b>
+              <div class="tech-stacks">
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 1</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 2</h1>
+                </div>
+                <div class="tech">
+                  <div class="icon">
+                    <img src="images/css-3.png" alt="" />
+                  </div>
+                  <h1 class="name">Tech 3</h1>
+                </div>
+              </div>
+            </div>
+            <div class="background"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card-collection">
+          <div class="card github">
+            <div class="card__content">
+              <h2 class="card__title">Github</h2>
+              <h3 class="card__body">
+                Github contains all academic projects during my university time.
+                <br />Care to take a look?
+              </h3>
+              <button class="card__button"> <a href="https://github.com/cuong24" target="_blank">Learn more</a></button>
+            </div>
+          </div>
+          <div class="card linkedin">
+            <div class="card__content">
+              <h2 class="card__title">LinkedIn</h2>
+              <h3 class="card__body">
+                LinkedIn contains all my experience, qualification and skills.
+                <br />Care to take a look?
+              </h3>
+              <button class="card__button"><a href="https://www.linkedin.com/in/cuong-nguyen-quoc/" target="_blank">Learn more</a></button>
+            </div>
+          </div>
+          <div class="card codepen">
+            <div class="card__content">
+              <h2 class="card__title">CodePen</h2>
+              <h3 class="card__body">
+                CodePen contains all the front-end experiment I've done so far.
+                <br />Care to take a look?
+              </h3>
+              <button class="card__button"><a href="https://codepen.io/cuong24" target="_blank">Learn more</a></button>
+            </div>
+          </div>
+          <div class="card email">
+            <div class="card__content">
+              <h2 class="card__title">Email</h2>
+              <h3 class="card__body">
+                Email can lead you directly to me. Promise to reply as fast as possible 👌.
+                <br />Care to take a look?
+              </h3>
+              <button class="card__button"><a href="mailto:cuongnguyen.quoc@outlook.com" target="_blank">Learn more</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
