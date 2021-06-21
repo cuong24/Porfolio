@@ -482,6 +482,7 @@ main section {
         ),
         url("images/main-page-bg.png") center no-repeat;
     background-size: contain;
+    overflow: hidden;
 }
 
 #home svg path {
